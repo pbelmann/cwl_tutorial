@@ -1,8 +1,20 @@
-# CWL Tutorial Short Read Assembler
+# CWL Tutorial Short Read Assembler  **DRAFT**
 
-This tutorial shows how create a cwl based biobox of your tool. The procedure consists of three steps.
+This tutorial shows how to create a cwl based biobox of your tool. The procedure consists of three steps.
 
-**1.Integrating your Tool into a Docker container**
+**1.Dockerize your Tool**
+
+**2.Create a CWL file for your tool.**
+
+**3.Implement the Bioboxes standard: Rename megahit output.**
+
+**4.Implement the Bioboxes standard: Put your CWL files together.**
+
+Please install first cwl tool by following the installation [instructions](https://github.com/common-workflow-language/cwltool#install) and clone this repository:
+
+~~~BASH
+git clone https://github.com/pbelmann/cwl_tutorial.git
+~~~
 
 1. The first step is to integrate your tool into a Docker container. There are multiple tutorials online available for
 dockerizing your tool. The most common way is to write a [Dockerfile](https://docs.docker.com/engine/reference/builder/) 
