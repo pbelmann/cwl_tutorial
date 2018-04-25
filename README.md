@@ -1,6 +1,6 @@
 # CWL Tutorial Short Read Assembler  **DRAFT**
 
-This tutorial shows how to create a cwl based biobox of your tool. The procedure consists of three steps.
+This tutorial shows how to create a cwl based biobox of your tool. The procedure consists of four steps.
 
 **1.Dockerize your Tool**
 
@@ -53,6 +53,8 @@ outputs:
 
 The megahit assembler accepts a list of fastq as input and produces fasta as output.
 In this workflow we are using the megahit [biocontainer](https://biocontainers.pro/registry/#/) which is a collection of containerized bioinformatics software. This workflow can be executed directly with the following command:
+
+**Example fastq file is also in this repository (reads.fq.gz).**
 
 ~~~BASH
 cwltool  megahit_core.cwl --fastq reads.fq.gz
